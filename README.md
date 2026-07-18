@@ -2,7 +2,7 @@
 
 > Every Rupee Matters.
 
-Kharcha is an India-first personal finance application designed to help users understand where every rupee goes.
+Kharcha is an India-first personal finance application designed to help users understand where their every rupee goes.
 
 ## Vision
 
