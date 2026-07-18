@@ -19,10 +19,10 @@ assets/
 backend/
 design/
 mobile/
-kharcha OS/
+product-bible/
 ```
 
-## kharcha OS
+## product-bible
 
 - ✅ Product Vision
 - ✅ User Personas
