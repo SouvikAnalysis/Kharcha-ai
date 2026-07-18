@@ -1,8 +1,17 @@
 # KHARCHA
 
-**Tagline:** *Every Rupee Matters.*
+---
+
+# Document Information
+
+| Version | 1.0 |
+|----------|-----|
+| Product | Kharcha |
+| Tagline | Every Rupee Matters |
+| Status | Approved |
 
 ---
+
 
 # Product Vision
 
