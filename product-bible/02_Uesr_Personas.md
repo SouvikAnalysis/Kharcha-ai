@@ -32,8 +32,12 @@
 ### App Usage
 
 * Opens Kharcha 2–5 times a day.
-* Records expenses immediately after spending.
-* Checks dashboard at the end of the week and month.
+* Record expenses immediately after spending.
+* Checks the dashboard at the end of the week and month.
+
+### Motivation
+
+"I want to know where my salary goes every month."
 
 ---
 
@@ -64,6 +68,13 @@
 * Uses Kharcha daily.
 * Wants simple reports.
 * Prefers reminders.
+
+### Technology Comfort
+
+* Heavy smartphone user
+* Expects fast interactions
+* Comfortable with notifications
+
 
 ---
 
