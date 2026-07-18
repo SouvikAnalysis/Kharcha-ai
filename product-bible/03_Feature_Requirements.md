@@ -11,7 +11,6 @@
 | Product | Kharcha |
 | Tagline | Every Rupee Matters |
 | Status | Approved |
-| Owner | Founder |
 
 ---
 
