@@ -19,51 +19,55 @@
 
 # Purpose
 
-This document defines how users move through Kharcha to accomplish important tasks.
+This document defines how users interact with Kharcha to accomplish important tasks.
 
-Every user flow should be:
+The goal of every user flow is to make financial management:
 
-- Simple
 - Fast
+- Simple
 - Predictable
-- Require minimal typing
+- Effortless
 
-Following the product principles, every important task should require as few steps as possible.
-
----
-
-# User Journey Overview
-
-```
-Open App
-      │
-      ▼
-Authentication
-      │
-      ▼
-Home Dashboard
-      │
-      ├───────────────┐
-      ▼               ▼
-Add Expense      View Insights
-      │               │
-      ▼               ▼
-Dashboard Updates  Reports
-      │
-      ▼
-Close App
-```
+Every user journey should follow the product principles defined in **00_PRODUCT_PRINCIPLES.md**.
 
 ---
 
-# Flow 1 — First-Time User
+# User Flow Index
 
-Goal:
+| Flow ID | User Flow | Priority | Frequency |
+|----------|-----------|----------|-----------|
+| UF-01 | First-Time User Onboarding | High | One Time |
+| UF-02 | Returning User | Critical | Daily |
+| UF-03 | Add Expense | Critical | Multiple Times Daily |
+| UF-04 | Edit Expense | Medium | Occasionally |
+| UF-05 | Delete Expense | Medium | Occasionally |
+| UF-06 | View Insights | High | Weekly |
+| UF-07 | Review Budget | High | Weekly / Monthly |
+| UF-08 | Search Expenses | Medium | Occasionally |
+| UF-09 | Manage Profile & Settings | Low | Rare |
+| UF-10 | Forgot Password | Low | Rare |
+| UF-11 | Logout | Low | Rare |
 
-Allow a new user to start tracking expenses in less than two minutes.
+---
+
+# UF-01 — First-Time User Onboarding
+
+## Goal
+
+Help a new user start tracking expenses in less than two minutes.
+
+---
+
+## Trigger
+
+User opens Kharcha for the first time.
+
+---
+
+## Flow
 
 ```
-Open App
+Launch App
 
 ↓
 
@@ -75,23 +79,25 @@ Welcome Screen
 
 ↓
 
-Sign Up
+Sign Up / Google Login
 
 ↓
 
-Google / Email Login
+Set Monthly Budget
 
 ↓
 
-Create Monthly Budget
-
-↓
-
-Select Default Categories
+Choose Default Categories
 
 ↓
 
 Home Dashboard
+
+↓
+
+Contextual Tip
+
+"Let's record your first expense."
 
 ↓
 
@@ -106,17 +112,51 @@ Success Message
 Continue Using Kharcha
 ```
 
-Expected completion time:
+---
 
-**Less than 2 minutes**
+## Postconditions
+
+- Account created
+- Budget saved
+- Categories configured
+- First expense recorded
+- User reaches Home Dashboard
 
 ---
 
-# Flow 2 — Returning User
+## Success Criteria
 
-Goal:
+- Setup completed in under 2 minutes.
+- User understands the app without reading a tutorial.
 
-Allow users to record expenses as quickly as possible.
+---
+
+## Related Screens
+
+- Splash
+- Welcome
+- Login
+- Budget Setup
+- Category Setup
+- Home
+
+---
+
+# UF-02 — Returning User
+
+## Goal
+
+Allow users to quickly check their financial status.
+
+---
+
+## Trigger
+
+User opens Kharcha.
+
+---
+
+## Flow
 
 ```
 Open App
@@ -124,6 +164,53 @@ Open App
 ↓
 
 Home Dashboard
+
+↓
+
+Review Today's Spending
+
+↓
+
+Review Budget
+
+↓
+
+Continue Using App
+```
+
+---
+
+## Success Criteria
+
+Users should understand their financial status within 5 seconds.
+
+---
+
+# UF-03 — Add Expense
+
+## Goal
+
+Record an expense in less than five seconds.
+
+---
+
+## Trigger
+
+User taps the "+" button.
+
+---
+
+## Preconditions
+
+- User is logged in.
+- Categories exist.
+
+---
+
+## Flow
+
+```
+Home
 
 ↓
 
@@ -151,16 +238,52 @@ Dashboard Updates
 
 ↓
 
-Continue Using App
+Expense Added Successfully
 ```
-
-Expected completion time:
-
-**Less than 5 seconds**
 
 ---
 
-# Flow 3 — Edit an Expense
+## Postconditions
+
+- Expense stored
+- Budget recalculated
+- Dashboard refreshed
+- Recent Expenses updated
+- Money Story updated
+
+---
+
+## Success Criteria
+
+- Less than 5 seconds
+- Maximum 3 user interactions
+- Minimal typing
+
+---
+
+## Related Screens
+
+- Home
+- Add Expense
+- Dashboard
+
+---
+
+# UF-04 — Edit Expense
+
+## Goal
+
+Correct previously entered expenses.
+
+---
+
+## Trigger
+
+User selects an expense.
+
+---
+
+## Flow
 
 ```
 Home
@@ -179,7 +302,7 @@ Edit
 
 ↓
 
-Update Amount / Category / Note
+Update Information
 
 ↓
 
@@ -187,12 +310,34 @@ Save
 
 ↓
 
-Dashboard Updates
+Dashboard Refresh
 ```
 
 ---
 
-# Flow 4 — Delete an Expense
+## Postconditions
+
+- Expense updated
+- Reports recalculated
+- Budget updated
+
+---
+
+# UF-05 — Delete Expense
+
+## Goal
+
+Remove incorrect expenses safely.
+
+---
+
+## Trigger
+
+User selects Delete.
+
+---
+
+## Flow
 
 ```
 Home
@@ -219,16 +364,34 @@ Expense Removed
 
 ↓
 
-Dashboard Updates
+Dashboard Refresh
 ```
 
 ---
 
-# Flow 5 — View Insights
+## Postconditions
 
-Goal:
+- Expense deleted
+- Budget updated
+- Reports updated
 
-Help users understand their spending.
+---
+
+# UF-06 — View Insights
+
+## Goal
+
+Help users understand spending habits.
+
+---
+
+## Trigger
+
+User taps "Insights".
+
+---
+
+## Flow
 
 ```
 Home
@@ -239,11 +402,15 @@ Insights
 
 ↓
 
-Monthly Overview
+Monthly Summary
 
 ↓
 
 Category Analysis
+
+↓
+
+Budget Status
 
 ↓
 
@@ -256,7 +423,32 @@ Return Home
 
 ---
 
-# Flow 6 — Review Budget
+## Success Criteria
+
+Users should immediately understand:
+
+- Total spending
+- Highest spending category
+- Budget status
+- Spending trend
+
+---
+
+# UF-07 — Review Budget
+
+## Goal
+
+Help users stay within budget.
+
+---
+
+## Trigger
+
+User taps Budget Card.
+
+---
+
+## Flow
 
 ```
 Home
@@ -288,7 +480,31 @@ Return Home
 
 ---
 
-# Flow 7 — Search Expenses
+## Success Criteria
+
+Users immediately know:
+
+- Budget remaining
+- Budget percentage used
+- Categories exceeding budget
+
+---
+
+# UF-08 — Search Expenses
+
+## Goal
+
+Quickly locate previous expenses.
+
+---
+
+## Trigger
+
+User taps Search.
+
+---
+
+## Flow
 
 ```
 Home
@@ -307,16 +523,28 @@ Results
 
 ↓
 
-Select Expense
-
-↓
-
-View Details
+Expense Details
 ```
 
 ---
 
-# Flow 8 — Change Settings
+## Search Filters
+
+- Category
+- Amount
+- Date
+
+---
+
+# UF-09 — Manage Profile & Settings
+
+## Goal
+
+Allow users to personalize Kharcha.
+
+---
+
+## Flow
 
 ```
 Profile
@@ -327,11 +555,11 @@ Settings
 
 ↓
 
-Choose Option
+Select Option
 
 ↓
 
-Save Changes
+Save
 
 ↓
 
@@ -340,7 +568,24 @@ Return
 
 ---
 
-# Flow 9 — Forgot Password
+## Available Settings
+
+- Dark Mode
+- Notifications
+- Change Password
+- Logout
+
+---
+
+# UF-10 — Forgot Password
+
+## Goal
+
+Recover account access.
+
+---
+
+## Flow
 
 ```
 Login
@@ -359,20 +604,24 @@ Receive Reset Link
 
 ↓
 
-Create New Password
+Create Password
 
 ↓
 
 Login
-
-↓
-
-Home
 ```
 
 ---
 
-# Flow 10 — Logout
+# UF-11 — Logout
+
+## Goal
+
+Securely sign out.
+
+---
+
+## Flow
 
 ```
 Profile
@@ -392,144 +641,142 @@ Login Screen
 
 ---
 
-# Daily User Flow
+# User Education Flow (UEF)
 
-Most users will follow this journey several times each day.
-
-```
-Open App
-
-↓
-
-View Dashboard
-
-↓
-
-Tap +
-
-↓
-
-Food
-
-↓
-
-₹120
-
-↓
-
-Save
-
-↓
-
-Dashboard Updates
-
-↓
-
-Close App
-```
-
-Target time:
-
-**Under 5 seconds**
+Kharcha teaches users progressively instead of showing long tutorials.
 
 ---
 
-# Weekly User Flow
+## UEF-01 — Welcome
 
-```
-Open App
+Trigger:
 
-↓
+First Login
 
-Home
+Message:
 
-↓
-
-Insights
-
-↓
-
-Money Story
-
-↓
-
-Budget Review
-
-↓
-
-Close App
-```
+> Welcome to Kharcha 👋
+>
+> Let's set up your budget in under a minute.
 
 ---
 
-# Monthly User Flow
+## UEF-02 — First Expense
 
-```
-Open App
+Trigger:
 
-↓
+First expense recorded.
 
-Home
+Message:
 
-↓
+> 🎉 Great start!
+>
+> Every expense helps you understand where your money goes.
 
-Budget Review
+---
 
-↓
+## UEF-03 — Fifth Expense
 
-Insights
+Trigger:
 
-↓
+After five expenses.
 
-Monthly Money Story
+Message:
 
-↓
+> You're building a great habit.
+>
+> Visit Insights to discover your spending patterns.
 
-Adjust Budget
+---
 
-↓
+## UEF-04 — First Money Story
 
-Close App
-```
+Trigger:
+
+After seven days of usage.
+
+Message:
+
+> 📖 Your first Money Story is ready.
+>
+> Discover where every rupee went this week.
+
+---
+
+## UEF-05 — Budget Warning
+
+Trigger:
+
+80% budget used.
+
+Message:
+
+> ⚠️ You've used 80% of your monthly budget.
+>
+> Review your spending before the month ends.
 
 ---
 
 # Navigation Rules
 
-Every flow should follow these principles:
-
-- Maximum three taps to reach an important feature.
-- Expense entry should require minimal typing.
-- Frequently used actions remain easily accessible.
+- Every important feature should be reachable within three taps.
+- Expense entry should take less than five seconds.
+- Frequently used actions should always remain visible.
+- The interface should minimize typing.
 - Users should never feel lost.
 - Every completed action should provide immediate feedback.
 
 ---
 
-# Success Criteria
+# User Flow Dependency Diagram
 
-A successful user flow means users can:
-
-- Add an expense in under five seconds.
-- Find any important feature quickly.
-- Understand their spending without confusion.
-- Stay engaged with the app over time.
-- Build a consistent expense tracking habit.
+```
+Launch App
+     │
+     ▼
+UF-01 First-Time User
+     │
+     ▼
+UF-02 Returning User
+     │
+     ├──────────────┐
+     ▼              ▼
+UF-03          UF-06
+Add Expense    View Insights
+     │              │
+     ▼              ▼
+UF-07        UF-08
+Review Budget Search
+     │
+     ▼
+UF-09 Profile
+     │
+     ├──────┐
+     ▼      ▼
+UF-10    UF-11
+Forgot   Logout
+Password
+```
 
 ---
 
-# Future User Flows
+# Success Criteria
 
-The architecture supports future additions without changing existing flows.
+The user flow is considered successful if users can:
 
-Examples:
+- Complete onboarding in under 2 minutes.
+- Add an expense in under 5 seconds.
+- Understand their financial status immediately.
+- Stay within budget using timely reminders.
+- Build a daily expense tracking habit.
+- Understand their spending through Insights and Money Story.
 
-- Family Wallet
-- Split Expenses
-- Voice Entry
-- OCR Receipt Scanning
-- AI Financial Coach
-- Subscription Tracking
-- Savings Goals
+---
 
-These flows will be documented separately when they become part of the product roadmap.
+# Guiding Principle
+
+Every user journey should answer one question:
+
+> **"How can we help the user achieve their goal with the fewest possible steps?"**
+
+If a flow feels complicated, it should be redesigned until it becomes simple.
