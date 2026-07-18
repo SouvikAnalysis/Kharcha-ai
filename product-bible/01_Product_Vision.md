@@ -1,21 +1,24 @@
 # KHARCHA
 
+# 01_PRODUCT_VISION.md
+
 ---
 
 # Document Information
 
-| Version | 1.0 |
-|----------|-----|
-| Product | Kharcha |
-| Tagline | Every Rupee Matters |
+| Version | 1.0 | 
+|----------|-----| 
+| Product | Kharcha | 
+| Tagline | Every Rupee Matters | 
 | Status | Approved |
 
 ---
 
-
 # Product Vision
 
-To become India's most trusted personal finance companion by helping every Indian understand where every rupee goes and make smarter financial decisions through a simple, fast, and beautiful mobile experience.
+To become India's most trusted personal finance companion by helping people understand, control, and improve their financial lives—one rupee at a time.
+
+Kharcha aims to simplify personal finance by making expense tracking effortless, insightful, and accessible for everyone. Rather than overwhelming users with complex financial tools, Kharcha focuses on helping them build better financial awareness through speed, simplicity, and meaningful insights.
 
 ---
 
@@ -23,24 +26,29 @@ To become India's most trusted personal finance companion by helping every India
 
 Kharcha exists to make expense tracking effortless.
 
-Instead of maintaining notebooks or complicated spreadsheets, users can record their daily expenses in just a few seconds and gain complete visibility into their spending habits.
+Instead of maintaining notebooks, spreadsheets, or complicated finance applications, users can record their daily expenses in just a few seconds and instantly understand how they are spending their money.
 
-Our mission is to help Indians develop better financial habits without making budgeting feel like a burden.
+Our mission is to help people develop better financial habits without making budgeting feel like a burden.
 
 ---
 
 # Problem Statement
 
-Millions of Indians receive their salary every month but often wonder where their money disappeared by the end of the month.
+Every month, millions of Indians receive their salary with good intentions to save money.
 
-Although many finance applications exist, they are often:
+However, by the end of the month, many ask the same question:
 
-* Too complicated
-* Designed for accountants instead of everyday users
-* Time-consuming to maintain
-* Focused on reports rather than building habits
+> **"Where did my salary go?"**
 
-Because of this, many people stop tracking their expenses after only a few days.
+Although many personal finance applications already exist, they often suffer from common problems:
+
+- Too complicated for everyday users
+- Designed like accounting software
+- Require too much manual effort
+- Filled with unnecessary features
+- Focus more on reports than habit building
+
+As a result, users lose interest and stop tracking their expenses after only a few days.
 
 ---
 
@@ -48,129 +56,190 @@ Because of this, many people stop tracking their expenses after only a few days.
 
 Kharcha was born from a real-life problem.
 
-As a salaried professional, I noticed that every month I had the same question:
+As a salaried professional, I found myself asking the same question every month:
 
-**"Where did my salary go?"**
+> **"Where did my salary go?"**
 
 I didn't want to maintain a notebook.
 
-I didn't want to spend several minutes filling forms inside an app.
+I didn't want to spend several minutes filling long forms inside an app.
 
-I simply wanted a fast and effortless way to record my expenses whenever I spent money.
+I simply wanted a fast and effortless way to record expenses the moment I spent money.
 
-Kharcha is being built for people exactly like me.
+When I couldn't find an application that balanced simplicity with meaningful financial insights, I decided to build one.
+
+Kharcha is being built for people who want clarity about their money without wasting their time.
 
 ---
 
 # Target Users
 
-### Primary Users
+## Primary Users
 
-* Salaried professionals (Age 22–40)
-* College students
-* PG and hostel residents
-* Young couples
-* Freelancers
-* Anyone who wants better control over their monthly spending
+- Salaried professionals (22–40 years)
+- College students
+- PG and hostel residents
+- Young working professionals
+- Freelancers
+- Anyone who wants better control over monthly spending
 
-### Secondary Users
+## Secondary Users
 
-* Families
-* Small business owners
-* Self-employed professionals
+- Families
+- Small business owners
+- Self-employed professionals
 
 ---
 
 # User Pain Points
 
-Users often experience problems such as:
+Users commonly experience the following problems:
 
-* "I don't know where my salary went."
-* Forgetting daily expenses.
-* No habit of writing expenses.
-* Expense tracking feels boring.
-* Existing apps require too many steps.
-* Difficult to understand spending patterns.
-* No timely reminders before overspending.
-* Unable to compare monthly spending easily.
+- "I don't know where my salary went."
+- Small daily expenses are easily forgotten.
+- Tracking expenses feels boring and repetitive.
+- Existing finance apps require too many steps.
+- Spending patterns are difficult to understand.
+- Budget overruns happen without warning.
+- Monthly spending is difficult to compare.
+- Users lose the habit of tracking within a few days.
 
 ---
 
 # Our Solution
 
-Kharcha makes expense tracking simple enough that users can record an expense in just a few seconds.
+Kharcha simplifies personal finance by making expense tracking quick, intuitive, and useful.
 
-The app focuses on speed, simplicity, and useful insights instead of unnecessary complexity.
+The application focuses on speed, simplicity, and actionable insights rather than unnecessary complexity.
 
-Users will always know:
+With Kharcha, users will always know:
 
-* How much they spent
-* Where they spent
-* How much budget remains
-* Which categories consume the most money
+- How much they have spent
+- Where they spent their money
+- Which categories consume the most money
+- How much budget remains
+- Whether they are spending more or less than previous months
+
+Every interaction is designed to reduce effort while increasing financial awareness.
+
+---
+
+# Product Principles
+
+Every decision made while building Kharcha must follow these principles.
+
+1. Every Rupee Matters.
+2. Busy people come first.
+3. Less typing, more tapping.
+4. Expense entry should take less than five seconds.
+5. Show insights, not spreadsheets.
+6. Every feature must save the user's time.
+7. Every screen should help users understand or control their money.
+8. Simplicity is a feature.
+9. Mobile-first, India-first.
+10. Privacy and security are never compromised.
 
 ---
 
 # Core Values
 
-1. Simplicity over complexity.
-2. Every feature must save the user's time.
-3. Privacy and security come first.
-4. Beautiful design improves user experience.
-5. Data should help users make better financial decisions.
-6. Every rupee deserves to be accounted for.
+- Simplicity over complexity
+- Transparency builds trust
+- Financial awareness leads to better decisions
+- Great design improves daily habits
+- Technology should reduce effort, not increase it
+- Every user deserves complete control over their money
 
 ---
 
 # Unique Selling Proposition (USP)
 
-Kharcha is designed specifically for Indian users who want a quick and effortless way to understand where their money goes.
+Kharcha is **not an accounting application.**
 
-Unlike traditional expense trackers that feel like accounting software, Kharcha focuses on:
+Kharcha is a **financial awareness application.**
 
-* Fast expense entry
-* Clean and modern interface
-* Budget awareness
-* Habit building
-* Actionable financial insights
+Instead of helping users simply record transactions, Kharcha helps them understand their spending with the least possible effort.
+
+Our key differentiators are:
+
+- Lightning-fast expense entry
+- Clean and intuitive user interface
+- Budget awareness
+- Habit building
+- AI-powered Money Story (future roadmap)
+- Personalized financial insights
 
 ---
 
-# MVP (Version 1)
+# Minimum Viable Product (MVP)
 
-The first version of Kharcha will include:
+Version 1 of Kharcha focuses only on solving one problem exceptionally well:
 
-* Secure user login
-* One-tap expense entry
-* Built-in expense categories
-* Monthly budget creation
-* Dashboard with spending summary
-* Category-wise expense analysis
-* Daily, weekly, monthly, and yearly reports
-* Smart reminders
-* Cloud backup
-* Dark mode
+> Helping users understand where their money goes.
+
+The MVP includes:
+
+- Secure authentication
+- One-tap expense entry
+- Default and custom categories
+- Monthly budgeting
+- Dashboard with spending overview
+- Category-wise reports
+- Daily and monthly reports
+- Smart reminders
+- Secure cloud synchronization
+- Dark mode
 
 ---
 
 # Future Vision
 
-Kharcha will gradually evolve into a complete personal finance platform for India.
+Kharcha will gradually evolve into a complete personal finance platform designed specifically for India.
 
-Future features may include:
+## Financial Awareness
 
-* AI-powered spending insights
-* Shared family wallets
-* PG and roommate expense splitting
-* Receipt scanning
-* Voice-based expense entry
-* Subscription tracking
-* Savings goals
-* Investment tracking
-* Financial health score
-* Premium membership
-* Admin analytics dashboard
-* Business analytics platform
+- AI-generated Money Story
+- Personalized spending insights
+- Financial health score
+- Saving recommendations
+
+## Collaboration
+
+- Family wallets
+- Shared expense groups
+- PG and roommate bill splitting
+
+## Automation
+
+- Receipt scanning
+- Voice expense entry
+- Subscription tracking
+- Smart recurring expenses
+
+## Financial Growth
+
+- Savings goals
+- Investment tracking
+- Goal-based budgeting
+
+## Business
+
+- Premium membership
+- Admin analytics dashboard
+- Business intelligence platform
+
+---
+
+# What Kharcha Is Not
+
+Kharcha is not:
+
+- Accounting software
+- Tax filing software
+- Banking software
+- Investment advisory software
+
+Kharcha is a personal finance companion built to help users understand and control their everyday spending.
 
 ---
 
@@ -178,16 +247,22 @@ Future features may include:
 
 When users open Kharcha, they should never again ask:
 
-**"Where did my salary go?"**
+> **"Where did my salary go?"**
 
-Instead, they should immediately know:
+Instead, they should confidently say:
 
-**"I know exactly where every rupee went."**
+> **"I know exactly where every rupee went."**
+
+If Kharcha consistently helps users answer that question, it has fulfilled its mission.
 
 ---
 
 # Brand Promise
 
-**Every Rupee Matters.**
+## Every Rupee Matters.
 
 Kharcha is committed to helping every Indian build better financial habits through simplicity, transparency, and technology.
+
+Every feature we build will respect one principle:
+
+> **Help users understand or control their money more easily.**
